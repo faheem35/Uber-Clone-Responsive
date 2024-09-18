@@ -1,0 +1,238 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+         
+}
+.navbar-toggler {
+  border-color: white; /* Set the border color to white */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3e%3cpath fill="none" stroke="%23ffffff" stroke-width="1.5" d="M2 4h12M2 8h12M2 12h12"/%3e%3c/svg%3e'); /* Use an SVG data URL for a white icon */
+}
+
+.navbar-brand {
+  font-family: "Raleway", system-ui;
+}
+.nav-link{
+  font-family: "Raleway", system-ui;
+
+}
+
+.nav-text{
+  font-family: "Raleway", system-ui;
+
+}
+header{
+  background-color: black;
+ 
+}
+
+
+
+
+#home{
+  background-color: black;
+  
+}
+
+#home-heading{
+  font-size: 50px;
+}
+
+.card{
+  background-color: #F5F5F5;
+}
+
+.details-btn{
+  background-color: white;
+  color: black;
+}
+
+
+#section-2{
+  height: 90vh;
+  width: 100%;
+}
+
+.gf-1{
+  font-family: "SUSE", system-ui;
+  font-size: 50px;
+}
+
+#secion-3{
+  height: 90vh;
+  width: 100%;
+}
+
+#sect-last{
+  width: 100%;
+  background-color: #F5F5F5;
+
+}
+
+/* arrow moving to right */
+.fa-arrow-right{
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .fa-arrow-right{
+  transform: translateX(10px); 
+}
+
+
+footer{
+  width: 100%;
+  
+  background-color: black;
+  color: white;
+
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 40px; /* Adjusted to a more reasonable size */
+  padding: 10px;
+}
+.grid{
+  display: grid;
+ 
+}
+
+
+.list-item{
+  color: white;
+  text-decoration: none;
+  line-height: 2.5;
+}
+
+.list-item:hover{      
+  color: #999999;
+}
+
+.head-title{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Raleway", system-ui;
+}
+
+.list-item-top{
+  color: white;
+  text-decoration: none;
+  line-height: 5;
+  border-bottom: none;
+  margin-left: -1%;
+
+}
+
+.list-item-top:hover{
+  border-bottom: 1px solid white;
+}
+
+.list-head{
+  font-weight: 600;
+  font-size: 20px;
+ 
+}
+
+.custom-gap {
+  gap: 20rem; /* 80px horizontal and vertical gap */
+}
+
+.social-tags{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.lang-loc {
+  display: grid;
+  grid-template-columns: auto auto; /* Default layout for larger screens */
+  gap: 16px; /* Adjust gap as needed */
+}
+
+@media (max-width: 768px) { /* For tablets and smaller devices */
+  .lang-loc {
+      grid-template-columns: auto; /* Single column layout for smaller screens */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+  .lang-loc {
+      grid-template-columns: 1fr; /* Ensures full-width items on very small screens */
+  }
+}
+
+
+.btn-content{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.playAppstore{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.terms-section{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.hr-style{
+  width: 9%;
+  border: 3px solid;
+  color: black;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Left takes as much space as available, right fits content */
+  align-items: center; /* Vertically centers SVGs and text */
+  color: black;
+  background-color: white;
+  height: 50px;
+  width: 65%; /* Default width */
+}
+
+/* Media query for smaller screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .grid-container1 {
+    width: 90%; /* Increase width to almost full-screen width on mobile */
+  }
+}
+
+
+
+/* Media query for very small screens (e.g., small mobile devices) */
+@media (max-width: 576px) {
+  .grid-container1 {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* Media query for larger screens (e.g., tablets or small desktops) */
+@media (min-width: 992px) {
+  .grid-container1 {
+    width: 65%; /* Reduce width slightly for larger screens */
+  }
+}
+
+
+.left-content {
+  display: flex; /* Align the first SVG and text horizontally */
+  align-items: center; /* Vertically center SVG and text */
+}
+
+
+.second-svg {
+  justify-self: end; /* Align second SVG to the right */
+  
+}
+
+.price-btn{
+  height: 50px;
+}
+

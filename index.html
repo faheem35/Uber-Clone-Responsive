@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <!-- bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- css link -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+<header >
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container bg-black   ">
+      <a class="navbar-brand text-white fs-4" href="#">Uber</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Ride</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Drive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Business</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About us</a></li>
+              <li><a class="dropdown-item" href="#">Our offering</a></li>
+              
+              <li><a class="dropdown-item" href="#">How uber works</a></li>
+              <li><a class="dropdown-item" href="#">Impact</a></li>
+              <li><a class="dropdown-item" href="#">Diversity,equity,and inclusion</a></li>
+              <li><a class="dropdown-item" href="#">Sustainability</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-2">
+              <button class="btn btn-black text-white nav-text" type="submit"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z" fill="currentColor"></path></svg><span class="ms-2">EN</span></button>
+          </li>
+          <li class="nav-item me-2">
+            <button class="btn btn-black text-white nav-text" type="submit">Help</button>
+        </li>
+          <li class="nav-item me-2">
+              <button class="btn btn-black text-white nav-text" type="submit">Log in</button>
+          </li>
+          <li class="nav-item me-2">
+              <button class="btn btn-light rounded-pill nav-text fw-semibold " type="submit">Sign up</button>
+          </li>
+      </ul>
+      
+        
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- home -->
+  <section id="home" >
+    <div class="container  " >
+      <div class="row align-items-center  pb-5 ">
+        <!-- left side -->
+        <div class="col-md-6 home-content  ps-4">
+          <h1 id="home-heading" class="text-white fw-bold mb-4">Go anywhere with <br> Uber</h1>
+          <p id="home-para" class="text-white">Request a ride, hop in, and go.</p>
+       
+
+
+            
+
+              <div class="grid-container1 rounded  pe-3 me-5">
+                <div class="left-content">
+                    
+                      <svg class="first-svg ms-2" width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon"><title>search</title><path fill-rule="evenodd" clip-rule="evenodd" d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm5-2a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z" fill="currentColor"></path></svg>
+                    
+                    <span class="text ms-3 ">Enter location</span>
+                </div>
+               
+                  <svg class="second-svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" tabindex="0" role="button" class="pe-location-fetch css-bOZeEP"><title>Navigate right up</title><path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="currentColor"></path></svg>
+               
+            </div>
+            
+
+
+            
+     <br>
+            
+
+
+          <div class="grid-container1 rounded  me-5 ">
+            <div class="left-content">
+                
+                  
+                  <svg class="first-svg ms-2 " width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon"><title>search</title><path fill-rule="evenodd" clip-rule="evenodd" d="M14 10h-4v4h4v-4ZM7 7v10h10V7H7Z" fill="currentColor"></path></svg>
+                
+                <span class="text ms-3 ">Enter destination</span>
+            </div>
+         </div>
+          
+          <br>
+          <button id="price-btn " class="btn btn-light  fw-medium" >See Prices</button>
+        </div>
+
+
+
+        
+        
+
+
+        <!-- right side -->
+        <div class="col-md-6 home-img text-md-end text-center   ">
+          <img class="mt-5 img-fluid  " width="85%"
+            src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_698,w_558/v1684852612/assets/ba/4947c1-b862-400e-9f00-668f4926a4a2/original/Ride-with-Uber.png"
+            alt="">
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- white tile 1-->
+
+  <section id="section-2 mb-5">
+    <div class="container">
+      <!-- card -->
+
+      <h1 class=" mt-5 ms-3 ">Suggestions</h1>
+
+
+
+      <div class="card mt-3 ms-3" style="max-width: 400px;">
+
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Ride</h5>
+              <p class="card-text">Go anywhere with Uber. Request a ride,hope in,and go.</p>
+              <a href="#" class="btn  rounded-pill details-btn">Details</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img  src="https://mobile-content.uber.com/launch-experience/ride.png" class="img-fluid rounded-end mt-5 "
+              alt="Image">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- below card -->
+
+      <!-- below card img -->
+      <div class="container pt-5 mb-5">
+        <div class="row mt-5">
+          <div class="img2 col-md-6 ">
+            <img class="img-fluid" width="85%"
+              src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_558,w_558/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png"
+              alt="">
+          </div>
+          <!-- below card content -->
+
+          <div class="content2 col-md-6 pt-5 ">
+            <h1 class="fw-bold  gf-1">Drive when you <br> want, make what <br> you need</h1>
+            <p class="mt-4  ">Make money on your schedule with deliveries or rides—or <br>both. You can use your own car or choose a rental <br> through Uber</p>
+            <button class="btn btn-dark mt-5 btn-lg">Get started </button><span
+              class="btn btn-light  border-bottom mt-5 ms-2 ">
+              Already have an account? Sign in</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- white tile 2-->
+
+
+  <section id="section-4  ">
+    <div class="container pt-5 mb-5">
+      <div class="row mt-5">
+         <!-- content -->
+         <div class="content2 col-md-6 pt-5 pb-5 ">
+          <h1 class="fw-bold  gf-1">The Uber you <br> know, reimagined <br> for business</h1>
+          <p class="mt-4  ">Uber for Business is a platform for managing global rides and meals, and <br> local
+            deliveries, for companies of any size.</p>
+          <button class="btn btn-dark mt-5 btn-lg">Get started </button><span
+            class="btn btn-light  border-bottom mt-5 ms-2 ">
+            Check out our solutions</span>
+
+        </div>
+        <!-- img -->
+        <div class="img2 col-md-6">
+          <img width="85%"
+            src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_558,w_558/v1684887108/assets/76/baf1ea-385a-408c-846b-59211086196c/original/u4b-square.png"
+            alt="">
+        </div>
+       
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- white tile 3-->
+
+  <section id="section-4  ">
+    <div class="container pt-5 mb-5  ">
+      <div class="row mt-5">
+        <!-- img -->
+        <div class="img2 col-md-6">
+          <img width="85%"
+            src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_558,w_558/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg"
+            alt="">
+        </div>
+        <!-- content -->
+        <div class="content2 col-md-6 pt-5 ">
+          <h1 class="fw-bold  gf-1">Make money by renting <br> out your car</h1>
+          <p class="mt-4  ">Connect with thousands of drivers and earn more per week with <br> Uber’s free fleet
+            management tools.</p>
+          <button class="btn btn-dark mt-5 btn-lg">Get started </button>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- qr code section -->
+  <section id="sect-last">
+    <div class="container">
+      <h1 class="pt-5 fw-bold">It’s easier in the apps</h1>
+      <div class="row pt-5 pb-5">
+        <div class="col-md-6">
+          <div class="card mb-3 p-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_150,w_150/v1690813624/assets/50/e85531-2f7e-4ee7-92d4-e39a6801ee2b/original/QR_https___t.uber.com_download-driver-app.png"
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title mt-4 fw-bold fs-5 ">Download the Uber app</h5>
+                  <p class="card-text ">Scan to download</p>
+
+                </div>
+              </div>
+              <div class="col-md-1 p-3">
+
+                <i class="fa-solid fa-arrow-right mt-5 fs-5"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+          <div class="card mb-3 p-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_150,w_150/v1690813624/assets/50/e85531-2f7e-4ee7-92d4-e39a6801ee2b/original/QR_https___t.uber.com_download-driver-app.png"
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title mt-4 fw-bold fs-5 ">Download the Uber app</h5>
+                  <p class="card-text ">Scan to download</p>
+
+                </div>
+              </div>
+              <div class="col-md-1 p-3">
+
+                <i class="fa-solid fa-arrow-right mt-5 fs-5"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- footer section -->
+  <footer >
+    <div class="container pt-5">
+      <a class="head-title"  href="">Uber</a>
+      <br>
+     <button class="list-item-top btn btn-black  mb-5 ">   Visit Help Center</button>
+      
+
+      <!-- col 1 -->
+      <div class=" grid-container">
+        <div class="grid">
+          <h1 class="list-head mb-3">Company</h1>
+          <a class="list-item" href="">About us</a>
+          <a class="list-item" href="">Our offerings</a>
+          <a class="list-item" href="">Newsroom</a>
+          <a class="list-item" href="">Investors</a>
+          <a class="list-item" href="">Blog</a>
+          <a class="list-item" href="">Careers</a>
+        </div>
+  
+        <!-- col 2 -->
+        <div class="grid">
+          <h1 class="list-head mb-3">Products</h1>
+          <a class="list-item" href="">Ride</a>
+         <a class="list-item" href="">Drive</a>
+         <a class="list-item" href=""> Deliver</a>
+          <a class="list-item" href="">Eat</a>
+          <a class="list-item" href="">Uber for Business</a>
+          <a class="list-item" href="">Uber Freight</a>
+            
+          <a class="list-item" href=""> Gift cards</a>
+           
+        </div>
+  
+        <!-- col 3 -->
+        <div class="grid">
+          <h1 class="list-head mb-3">Global citizenship</h1>
+          <a class="list-item" href="">Safety</a>
+         <a class="list-item" href="">Diversity and Inclusion</a>
+         <a class="list-item" href=""> Sustainability</a>
+          
+        </div>
+  
+        <!-- col 4 -->
+        <div class="grid">
+          <h1 class="list-head mb-3">Travel</h1>
+          <a class="list-item" href="">Reserve</a>
+         <a class="list-item" href="">Airports</a>
+         <a class="list-item" href=""> Cities</a>
+         
+        </div>
+      </div>
+
+      
+      <!-- social media tags  and lang-loc-->
+      
+        <div class="row custom-gap mt-5 pt-5"> <!-- custom-gap class -->
+          <div class="col-md-5 social-tags">
+            
+            <div > <i class="fa-brands fa-facebook"></i></div>
+            <div >  <i class="fa-brands fa-x-twitter"></i></div>
+            <div >  <i class="fa-brands fa-youtube"></i></div>
+            <div > <i class="fa-brands fa-linkedin"></i></div>
+              <div > <i class="fa-brands fa-instagram"></i></div>
+            
+          </div>
+
+          <div class="col-md-3 lang-loc">
+            <div >
+              <button class="btn btn-black text-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Globe</title><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z" fill="currentColor"></path></svg><span class="btn-content"> English</span></button>
+            </div>
+
+            <div>
+              <button class="btn btn-black text-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Location marker</title><path d="M18.7 3.8C15 .1 9 .1 5.3 3.8c-3.7 3.7-3.7 9.8 0 13.5L12 24l6.7-6.8c3.7-3.6 3.7-9.7 0-13.4ZM12 12.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Z" fill="currentColor"></path></svg> <span class="btn-content" >Kochi</span></button>
+            </div>
+          </div>
+        
+        </div>
+
+        <!-- play store & App store  -->
+         <div class="row mt-5">
+          <div class="col-md-3 playAppstore">
+          <div>  <img width="90%" src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-google-4d63c31a3e.svg" alt=""></div>
+          
+
+          
+            <div><img width="90%" src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-apple-f1f919205b.svg" alt=""></div>
+          
+         </div>
+        </div>
+
+         <!-- privacy terms -->
+         <div class="row custom-gap mt-5 pt-5 pb-5"> <!-- custom-gap class -->
+          <div class="col-md-5 ">
+            <p class="text-white-50 ">© 2024 Uber Technologies Inc.</p>
+           
+            
+          </div>
+
+          <div class="col-md-4 terms-section">
+            <button class="btn btn-black text-white-50">Privacy</button>
+            <button class="btn btn-black text-white-50">Accessibility</button>
+            <button class="btn btn-black text-white-50">Terms</button>
+            
+          
+          </div>
+        
+        </div>
+      
+      
+
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
