@@ -139,7 +139,7 @@ footer{
 }
 
 .custom-gap {
-  gap: 2rem; /* horizontal and vertical gap */
+  gap: 2rem; 
 }
 
 .social-tags{
@@ -149,21 +149,10 @@ footer{
 
 .lang-loc {
   display: grid;
-  grid-template-columns: auto auto; /* Default layout for larger screens */
+  grid-template-columns: auto auto; 
   gap: 16px; 
 }
 
-@media (max-width: 768px) { /* For tablets and smaller devices */
-  .lang-loc {
-      grid-template-columns: auto; /* Single column layout for smaller screens */
-  }
-}
-
-@media (max-width: 480px) { /* For mobile devices */
-  .lang-loc {
-      grid-template-columns: 1fr; /* Ensures full-width items on very small screens */
-  }
-}
 
 
 .btn-content{
@@ -191,50 +180,61 @@ footer{
 
 .grid-container1 {
   display: grid;
-  grid-template-columns: 1fr auto; /* Left takes as much space as available, right fits content */
-  align-items: center; /* Vertically centers SVGs and text */
+  grid-template-columns: 1fr auto; 
+  align-items: center; 
   color: black;
   background-color: white;
   height: 50px;
-  width: 65%; /* Default width */
+  width: 65%; 
 }
-
-/* Media query for smaller screens (e.g., mobile phones) */
-@media (max-width: 768px) {
-  .grid-container1 {
-    width: 90%; /* Increase width to almost full-screen width on mobile */
-  }
-}
-
-
-
-/* Media query for very small screens (e.g., small mobile devices) */
-@media (max-width: 576px) {
-  .grid-container1 {
-    width: 100%; /* Full width for smaller screens */
-  }
-}
-
-/* Media query for larger screens (e.g., tablets or small desktops) */
-@media (min-width: 992px) {
-  .grid-container1 {
-    width: 65%; /* Reduce width slightly for larger screens */
-  }
-}
-
 
 .left-content {
-  display: flex; /* Align the first SVG and text horizontally */
-  align-items: center; /* Vertically center SVG and text */
+  display: flex; 
+  align-items: center; 
 }
 
 
 .second-svg {
-  justify-self: end; /* Align second SVG to the right */
+  justify-self: end; 
   
 }
 
 .price-btn{
   height: 50px;
 }
+
+
+/* media query */
+@media (min-width: 992px) {
+  .grid-container1 {
+    width: 65%; 
+  }
+}
+
+@media (max-width: 768px) { 
+  .lang-loc {
+      grid-template-columns: auto; 
+  }
+  .grid-container1 {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container1 {
+    width: 100%; 
+  }
+}
+
+
+@media (max-width: 480px) { 
+  .lang-loc {
+      grid-template-columns: 1fr; 
+  }
+}
+
+
+
+
+
 
